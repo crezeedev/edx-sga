@@ -50,7 +50,7 @@ setup(
     ],
     entry_points={
         "xblock.v1": [
-            "edx_sga = edx_sga.sga:StaffGradedAssignmentCustomXBlock",
+            "edx-sga-custom = edx_sga.sga:StaffGradedAssignmentCustomXBlock",
         ]
     },
     package_data=package_data("edx_sga", ["static", "templates"]),
