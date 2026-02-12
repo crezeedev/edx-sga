@@ -40,7 +40,7 @@ from xmodule.modulestore.xml_exporter import export_course_to_xml
 from xmodule.modulestore.xml_importer import import_course_from_xml
 
 from edx_sga.constants import ShowAnswer
-from edx_sga.sga import StaffGradedAssignmentXBlock
+from edx_sga.sga import StaffGradedAssignmentCustomXBlock
 from edx_sga.tests.common import (
     DummyResource,
     TempfileMixin,

@@ -1,7 +1,7 @@
 # Configuration for i18n workflow.
 
 locales:
-    - en  # English - Source Language
+    - es  # English - Source Language
     # Add languages here as needed
 
 # The locales used for fake-accented English, for testing.
@@ -9,6 +9,7 @@ dummy_locales:
     - eo
     - fake2
     - rtl  # Fake testing language for Arabic
+    - en
 
 # Directories we don't search for strings.
 ignore_dirs:

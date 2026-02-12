@@ -18,7 +18,7 @@ def package_data(pkg, root_list):
 
 
 setup(
-    name="edx-sga",
+    name="edx-sga-custom",
     version=edx_sga.__version__,
     description="edx-sga Staff Graded Assignment XBlock",
     license="GNU Affero General Public License v3 or later (AGPLv3+)",
@@ -50,7 +50,7 @@ setup(
     ],
     entry_points={
         "xblock.v1": [
-            "edx_sga = edx_sga.sga:StaffGradedAssignmentXBlock",
+            "edx_sga = edx_sga.sga:StaffGradedAssignmentCustomXBlock",
         ]
     },
     package_data=package_data("edx_sga", ["static", "templates"]),
