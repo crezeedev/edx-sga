@@ -76,7 +76,7 @@ def reify(meth):
 
 @XBlock.needs('replace_urls')
 @XBlock.needs('user')
-class StaffGradedAssignmentCustomXBlock(
+class StaffGradedAssignmentXBlock(
     StudioEditableXBlockMixin, ShowAnswerXBlockMixin, XBlock
 ):
     """
@@ -595,7 +595,7 @@ class StaffGradedAssignmentCustomXBlock(
         fragment.add_css(_resource("static/css/edx_sga.css"))
         fragment.add_javascript(_resource("static/js/src/edx_sga.js"))
         fragment.add_javascript(_resource("static/js/src/jquery.tablesorter.min.js"))
-        fragment.initialize_js("StaffGradedAssignmentCustomXBlock")
+        fragment.initialize_js("StaffGradedAssignmentXBlock")
         return fragment
 
     def studio_view(self, context=None):
